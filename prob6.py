@@ -1,20 +1,21 @@
-i = 0
-j = 0
-a = 0
-b = 0
-sum1 = 0
-sum2 = 0
-answer = 0
+# i = 0  - Unnesecary to instantiate and initialize variables in python
+# j = 0
+# a = 0
 
-for i in range (1,101):
-    a = i*i
-    sum1 += a
+sumOfElements = 0
+sumOfSquares = 0
 
-for j in range (1,101):
-    b += j
+# Calculate the sum of all integers squared 1 through 100
+for element in range (1,101):
+    square = element * element
+    sumOfSquares += square
+
+# Calculate the sum of all integers 1 through 100 (Then Square it on line 17)
+for element in range (1,101):
+    sumOfElements += element
     
-sum2 = b*b
+squareOfSums = sumOfElements * sumOfElements
 
-answer = sum2 - sum1
+answer = squareOfSums - squareOfSums
 
-print answer
+print(answer) # Now it will run in python 2 and 3!
